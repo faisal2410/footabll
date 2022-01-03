@@ -1,0 +1,578 @@
+/* -----------Google Fonts -------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/*-----------------------------------------------Common Style-------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+   font-family: 'Poppins', sans-serif;
+}
+
+/* ---------------------------------------------------header part-----------------------------------------------*/
+
+/*********nav********/
+.container{
+    width: 100%;
+}
+main{
+    
+    justify-content: center;
+    align-items: center;    
+    width: 100%;
+}
+header{
+    background:#2D25A0;
+    width: 100%;
+    }
+.nav-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav{
+    padding-left:90px ;
+}
+ 
+nav ul{
+    float: left;
+    margin-right: 20px;
+  }
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+nav ul li a{
+    color: white;
+    font-size: 1.0625rem;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+a.active,a:hover{
+    background: #1b9bff;
+    transition: .5s;
+  }
+.checkbtn{
+    font-size: 1.875rem;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+#check{
+    display: none;
+  }
+.login{
+      margin-right: 90px;
+  }
+.login a{
+    text-decoration: none;
+    background:#E02C6D;
+    margin-right: 30px;
+    padding: 5px 10px;
+    color: white;
+   }
+.fa-sign-in-alt{
+    padding-right: 10px;
+    
+   }
+
+/**********banner************/
+
+.banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    }
+.banner-left{
+    padding-left: 100px;
+
+}
+.banner-left h1{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 4rem;
+    padding-bottom: 20px;
+    
+}
+.animated{
+    background: linear-gradient(to right,#CCC 50%, #6647ee 50%, #CC2E5D);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.9s ease-out;
+}
+.animated:hover{
+    background-position: -100%;
+}
+.banner-left a{
+    text-decoration: none;
+    color: #FFFFFF;
+    background:#E02C6D;
+    margin-right: 30px;
+    padding: 10px 20px;
+    }
+.fa-arrow-right{
+    padding-left: 10px;
+}
+
+.banner-img img{
+    padding-top: 50px;
+    
+    padding-bottom: 30px;
+    /* width: 556.01px;
+    height: 438px; */
+    width: 70%;
+    height: 30%;
+    margin-left: 50px;
+  }
+.banner-img:hover img{
+    transform: scale(1.5) skew(3deg);
+    transition: transform 2s ease-in-out;
+    }
+.banner-img{
+    overflow: hidden;
+   }
+
+/*--------------------------------------------------main players---------------------------------------------- */
+/********PLAYERS***************/
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: inherit;
+    margin: 50px;
+    padding-left: 50px;
+    }
+.player{
+    box-sizing: border-box;
+    padding: 15px;
+    width: 90%;
+    height: auto;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.player img{
+    /* width: 300px;
+    height: 256px; */
+    width: 100%;
+    height: 70%;
+    
+    
+}
+.player p{
+    color:#6C6C6C;
+}
+
+/************HeightLight*************/
+
+.heightlight{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    
+    margin-left: 90px;
+   }
+.heightlight-left{
+    
+    padding-right: 30px;
+}
+.heightlight-left h1{
+    color: black;
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+ }
+.heightlight-left p{
+    color:#6C6C6C;
+    padding-bottom: 30px;
+    font-size: 1rem;
+}
+.heightlight-left a{
+    text-decoration: none;
+    color: #FFFFFF;
+    background:#E02C6D;
+    margin-right: 30px;
+    padding: 10px 20px;
+    }
+.fa-arrow-right{
+    padding-left: 10px;
+}
+
+.heightlight-img img{
+   display: flex;
+   flex-direction: row;
+    width: 80%;
+    height: 50%;
+    margin-bottom: 90px;
+    
+   }
+.heightlight-img:hover img{
+    transform: scale(1.5) skew(-20deg);
+    transition: transform 2s ease-in-out;
+}
+/*############################################ Bonus Section ######################################################*/
+
+/*********ScoarBoard**********/
+.scorebox {
+	background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+	display: flex;
+	flex-direction: column;
+	width:80%;
+	border-radius: 10px;
+   
+	box-shadow: 0 0 2px 0 rgba(#303030, 0.1), 0 4px 4px 0 rgba(#303030, 0.1);
+	}
+
+.match-status {
+	font-weight: 600;
+	font-size: 1rem;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    }
+
+.match-content {
+	display: flex;
+	position: relative;
+    }
+
+.column {
+	padding: 32px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: calc(100%/3);
+    }
+
+.team-name {
+	text-align:center;
+	margin-bottom: 35px;
+	font-size: 1.25rem;
+	font-weight: 600;
+    }
+.team-name i{
+    color:#2D25A0;
+   
+    }
+.match-details {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    }
+
+.match-date, .match-referee {
+	font-size: 0.875rem;
+	color: rgba(128, 128, 128, 0.5);
+	}
+
+.match-score {
+	margin-top: 12px;
+	display: flex;
+	align-items: center;
+    }
+
+.match-score-number {
+	font-size: 3rem;
+	font-weight: 600;
+	line-height: 1;
+    }
+
+.match-score-divider {
+	font-size: 1.75rem;
+	font-weight: 700;
+	line-height: 1;
+	color: var (--color-text-icon);
+	margin-left: 10px;
+	margin-right: 10px;
+	}
+
+.match-referee {
+	margin-top: 12px;
+    margin-bottom: 12px;
+    }
+
+.match-bet-place {
+	position: absolute;
+	bottom: -16px;
+	left: 50%;
+	transform: translateX(-50%);
+	border: none;
+	border-radius: 6px;
+	padding: 10px 48px;
+	color: rgba(rgb(114, 105, 105), 0.9);
+	font-size: 0.875rem;
+	box-shadow: 0 4px 8px 0 rgba(#aa2020, 0.25);
+    }
+.container-score {
+	
+	
+    width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    }
+
+
+/****************** form *******************/
+.form{
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+   }
+.box{
+    width: 50%;
+    padding: 30px 100px;
+    border-radius: 10px;
+    text-align: center;
+    background: #fbfbfb;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+   }
+.box h1{
+    color:black;
+    text-transform: uppercase;
+    font-weight:700;
+    }
+.box input[type="text"], .box input[type="password"]{
+    border:0;
+    outline: none;
+    background:none;
+    display:block;
+    margin:20px auto;
+    padding: 14px 10px;
+    text-align: center;
+    
+    border:2px solid #3498db;
+    border-radius: 24px;
+    color:black;
+    transition: 0.25s ease-in-out;
+}
+
+::-webkit-input-placeholder
+{
+    color: rgb(211, 211, 211);
+}
+
+.box input[type="text"]:focus, .box input[type="password"]:focus{
+    
+    border-color:#2D25A0;
+    box-shadow: 1.5px 0px 15px#3498db;
+}
+
+.box input[type="submit"]
+{
+    border:0;
+    outline: none;
+    background:none;
+    display:block;
+    margin:20px auto;
+    padding: 14px 40px;
+    text-align: center;
+    border:2px solid #E02C6D;
+    border-radius: 24px;
+    color:black;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+}
+.box input[type="submit"]:hover{
+    background: #E02C6D;
+    }
+
+.box input[type="submit"]:active{
+    background: #3498db;
+}
+
+  /*---------------------------------------------------Footer----------------------------------------------------*/
+
+  .footer
+  { 
+      text-align: center;
+      margin-top: 60px;
+      padding-bottom: 80px;
+  }
+  .footer-header
+  {
+      display: inline-block;
+      margin-left:50%;
+      transform: translate(-50%);
+  }
+  
+  .footer-logo
+  {
+      width:80%;
+  }
+  
+  .footer-logo img 
+  {
+      width:80%;
+    
+     
+  }
+  
+  .footer-icon .fab
+  {
+      width: 20px;
+      height: 20;
+      font-size:20px;
+      color: #414141;
+      background-color:#bdbdbd;
+      margin: 0 15px 20px;
+      padding:15px;
+      border-radius: 50%;
+  }
+  
+  .copyright
+  {
+      font-size: 25px;
+      margin:10px 0;
+  }
+ 
+/********************************************************Media Query**********************************************/
+ 
+
+/* Mobile Devices */
+@media only screen and (max-width:600px)  {
+   
+.container{
+        width: 100vw;
+        }
+main{
+    width: 100%;
+    
+}
+ 
+  
+
+.checkbtn{
+    display: block;
+  }
+      ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        left: -100%;
+        
+       }
+     
+.login{
+        padding-left: 70px;
+    }
+.login a{
+        display: flex;
+    }
+header{
+    width:100%;
+    
+    }
+.banner{
+        flex-direction: column;
+    }
+.banner-left h1{
+        font-size: 35px;
+        margin-right: 235px;
+    }
+.banner-img img{
+    display: flex;
+    flex-direction: row;
+        width: 100%;
+      height: 100%;
+      
+    }
+    
+.players{
+        
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 3px;
+    }
+.player {
+        flex-direction: column;
+        }
+.heightlight{
+        flex-direction: column;
+        
+        justify-content: center;
+        align-items: center;
+        
+    }
+.heightlight-img img{
+    width: 100%;
+    height: 90%;
+    margin-top: 60px;
+}    
+.container-score{
+       display: none;
+    }
+footer{
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 80px;
+        width: 100%;
+        
+    }
+
+footer p{
+    font-size: 0.625rem;
+    padding-left: 20px;
+}
+    
+}
+
+
+/******tablet devices********/
+
+@media only screen and (min-width: 688px) and (max-width:992px) {
+    .container{
+        width: 100%;
+        height: 100%;  
+    }
+    header{
+        width: 100%;
+        
+    }
+   
+    
+    .checkbtn{
+            display: block;
+          }
+    ul{
+        position: fixed;
+     width: 100%;
+     height: 100%;
+     top: 80px;
+     left: -100%;
+     text-align: center;
+     
+    }
+   .login{
+       padding-right: 40px;
+   }
+    .banner{
+        flex-direction: column;
+    }
+    main{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
